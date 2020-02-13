@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.nav-page{
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.btn{
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 2px solid rgb(6, 32, 43);
+}
+
+.btn:hover{
+    background-color: rebeccapurple;
+    color: white;
+} 
+
+.wrapper{
+    border: 3px solid black;
+    /* height: 100vh; */
+}
+
+header{
+    border: 1px solid red;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+section{
+    border: 2px dotted brown;
+    display: flex;
+}
+
+.left-content{
+    height: 200px;
+    flex-basis: 20%;
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    background-color: orange;
+    flex: 2;
+    text-align: center;
+    padding: 20px;
+}
+
+.news{
+    background-color: rgb(87, 32, 7);
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.right-content{
+    height: 200px;
+    flex-basis: 80%;
+    border: 1px solid rgb(5, 10, 5);
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer{
+    border: 1px solid rgb(82, 23, 190);
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* media query for tablet mode */
+@media (min-width: 768px) and (max-width: 991px){
+    section{    
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .left-content{
+        flex-direction: row;
+    }
+}
+
+/* media query for mobile mode */
+@media (max-width: 768px){
+    section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .left-content{
+        flex-direction: column;
+    }
+   
+}
